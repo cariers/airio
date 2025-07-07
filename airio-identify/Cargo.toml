@@ -1,6 +1,6 @@
 [package]
 name = "airio-identify"
-version = "0.1.0"
+version = "0.2.0"
 rust-version.workspace = true
 edition.workspace = true
 description = "Identify protocol for airio"

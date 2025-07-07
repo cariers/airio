@@ -40,7 +40,7 @@ dependencies = [
 
 [[package]]
 name = "airio-core"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "airio-stream-select",
  "bs58",
@@ -53,7 +53,7 @@ dependencies = [
 
 [[package]]
 name = "airio-identify"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "airio-core",
  "bytes",
@@ -65,7 +65,7 @@ dependencies = [
 
 [[package]]
 name = "airio-muxing"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "airio-core",
  "futures",
@@ -75,7 +75,7 @@ dependencies = [
 
 [[package]]
 name = "airio-quic"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "airio-core",
  "bytes",
@@ -92,7 +92,7 @@ dependencies = [
 
 [[package]]
 name = "airio-stream-select"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "bytes",
  "futures",
@@ -104,7 +104,7 @@ dependencies = [
 
 [[package]]
 name = "airio-tcp"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "airio-core",
  "futures",
@@ -115,7 +115,7 @@ dependencies = [
 
 [[package]]
 name = "airio-ws"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "airio-core",
  "airio-tcp",
@@ -128,7 +128,7 @@ dependencies = [
 
 [[package]]
 name = "airio-yamux"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "airio-core",
  "futures",
@@ -700,7 +700,9 @@ dependencies = [
 
 [[package]]
 name = "muxing"
-version = "0.3.0"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aa5a3a88bc4cfe32ae4ea22d8705093d3f7ebce4a9992d651c69fdcc3b81eb9f"
 dependencies = [
  "bytes",
  "futures",

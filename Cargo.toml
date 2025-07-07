@@ -20,12 +20,12 @@ thiserror = "2.0.12"
 tokio = { version = "1.46.1", default-features = false}
 futures = "0.3.31"
 tracing = { version = "0.1" }
-airio-core = { path = "airio-core" }
-airio-stream-select = { path = "airio-stream-select" }
-airio-tcp = { path = "transports/airio-tcp"}
-airio-ws = { path = "transports/airio-ws"}
-airio-identify = { path = "airio-identify" }
-airio = { path = "airio" }
+airio-core = { path = "airio-core", version = "0.2.0" }
+airio-stream-select = { path = "airio-stream-select" , version = "0.2.0"}
+airio-tcp = { path = "transports/airio-tcp", version = "0.2.0"}
+airio-ws = { path = "transports/airio-ws", version = "0.2.0"}
+airio-identify = { path = "airio-identify", version = "0.2.0" }
+airio = { path = "airio" , version = "0.2.0"}
 bytes = "1.10.1"
-airio-muxing = { path = "muxers/airio-muxing", version = "0.1.0"}
-airio-yamux = { path = "muxers/airio-yamux", version = "0.1.0"}
+airio-muxing = { path = "muxers/airio-muxing", version = "0.2.0"}
+airio-yamux = { path = "muxers/airio-yamux", version = "0.2.0"}
