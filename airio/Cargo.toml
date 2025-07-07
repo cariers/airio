@@ -1,0 +1,36 @@
+[package]
+name = "airio"
+version = "0.2.0"
+rust-version.workspace = true
+edition.workspace = true
+description = "A collection of networking libraries for airio"
+authors = ["Cariers Kim <cariers.kim@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cariers/airio"
+keywords = ["airio", "networking"]
+categories = ["network-programming", "asynchronous"]
+
+
+[features]
+full = [
+    "tcp",
+    "identify",
+    "muxing",
+    "yamux",
+    "ws"
+]
+
+tcp = ["dep:airio-tcp"]
+identify = ["dep:airio-identify"]
+muxing = ["dep:airio-muxing"]
+yamux = ["dep:airio-yamux"]
+ws = ["dep:airio-ws"]
+
+
+[dependencies]
+airio-core.workspace = true
+airio-tcp = { workspace = true, optional = true }
+airio-identify = { workspace = true, optional = true }
+airio-muxing = { workspace = true, optional = true }
+airio-yamux = { workspace = true, optional = true }
+airio-ws = { workspace = true, optional = true }

@@ -1,0 +1,20 @@
+[package]
+name = "airio-core"
+version = "0.1.0"
+rust-version.workspace = true
+edition.workspace = true
+description = "Core library for airio, providing essential networking functionalities"
+authors = ["Cariers Kim <cariers.kim@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cariers/airio"
+keywords = ["airio", "networking"]
+categories = ["network-programming", "asynchronous"]
+
+[dependencies]
+either = "1.15.0"
+futures.workspace = true
+pin-project = "1.1"
+airio-stream-select.workspace = true
+tracing.workspace = true
+thiserror.workspace = true
+bs58 = "0.5.1"

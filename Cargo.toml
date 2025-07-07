@@ -1,0 +1,31 @@
+[workspace]
+members = [
+    "airio-core",
+    "transports/airio-tcp",
+    "airio-stream-select",
+    "examples/*",
+    "airio",
+    "airio-identify",
+    "muxers/airio-muxing",
+    "muxers/airio-yamux"
+, "transports/airio-ws", "transports/airio-quic"]
+resolver = "3"
+
+[workspace.package]
+rust-version = "1.88.0"
+edition = "2024"
+
+[workspace.dependencies]
+thiserror = "2.0.12"
+tokio = { version = "1.46.1", default-features = false}
+futures = "0.3.31"
+tracing = { version = "0.1" }
+airio-core = { path = "airio-core" }
+airio-stream-select = { path = "airio-stream-select" }
+airio-tcp = { path = "transports/airio-tcp"}
+airio-ws = { path = "transports/airio-ws"}
+airio-identify = { path = "airio-identify" }
+airio = { path = "airio" }
+bytes = "1.10.1"
+airio-muxing = { path = "muxers/airio-muxing", version = "0.1.0"}
+airio-yamux = { path = "muxers/airio-yamux", version = "0.1.0"}

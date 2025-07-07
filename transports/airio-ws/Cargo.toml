@@ -1,0 +1,21 @@
+[package]
+name = "airio-ws"
+version = "0.1.0"
+rust-version.workspace = true
+edition.workspace = true
+description = "WebSocket transport for airio"
+authors = ["Cariers Kim <cariers.kim@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cariers/airio"
+keywords = ["airio", "networking"]
+categories = ["network-programming", "asynchronous"]
+
+
+[dependencies]
+tokio = {workspace = true}
+airio-core.workspace = true
+futures.workspace = true
+async-tungstenite = "0.29.1"
+bytes.workspace = true
+tracing.workspace = true
+airio-tcp.workspace = true

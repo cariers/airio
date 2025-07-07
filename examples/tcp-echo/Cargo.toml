@@ -1,0 +1,23 @@
+[package]
+name = "tcp-echo"
+version = "0.1.0"
+rust-version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "tcp-echo"
+path = "src/main.rs"
+
+[[bin]]
+name = "tcp-echo-client"
+path = "src/client.rs"
+
+[dependencies]
+airio = {workspace = true, features = ["full"]}
+anyhow = "1.0.98"
+tokio = {workspace = true, features = ["full"]}
+futures.workspace = true
+bytes = "1.10.1"
+rand = "0.9.1"
+tracing = {workspace = true}
+tracing-subscriber = {version = "0.3.19", default-features = false, features = ["fmt", "env-filter"]}

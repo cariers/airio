@@ -1,0 +1,18 @@
+[package]
+name = "airio-muxing"
+version = "0.1.0"
+rust-version.workspace = true
+edition.workspace = true
+description = "Muxing multiplexing protocol for airio"
+authors = ["Cariers Kim <cariers.kim@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cariers/airio"
+keywords = ["airio", "networking"]
+categories = ["network-programming", "asynchronous"]
+
+
+[dependencies]
+futures = { workspace = true }
+muxing = { path = "../../../muxing" }
+airio-core.workspace = true
+tracing.workspace = true

@@ -1,0 +1,18 @@
+[package]
+name = "airio-yamux"
+version = "0.1.0"
+rust-version.workspace = true
+edition.workspace = true
+description = "Yamux multiplexing protocol for airio"
+authors = ["Cariers Kim <cariers.kim@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cariers/airio"
+keywords = ["airio", "networking"]
+categories = ["network-programming", "asynchronous"]
+
+
+[dependencies]
+futures = { workspace = true }
+yamux = "0.13.5"
+airio-core.workspace = true
+tracing.workspace = true
